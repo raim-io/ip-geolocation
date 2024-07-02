@@ -10,7 +10,11 @@ const PORT = process.env.PORT;
 const app = express();
 
 app.get("/", async (req, res) => {
-  res.send("<h1>Welcome to HNG 11 - Backend Track (Task 1)</h1>");
+  res.send(`
+    <h1>Welcome to HNG 11 - Backend Track (Task 1)</h1>
+
+    <p><b>Slack Name: </b> Oluwatobiloba Raheem</p>
+  `);
 });
 
 app.get("/api/hello", async (req, res) => {
